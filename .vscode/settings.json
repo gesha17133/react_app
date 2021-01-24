@@ -1,0 +1,4 @@
+{
+    "autoimport.filesToScan": "**/*.{js,jsx}",
+    "autoimport.showNotifications": true
+}
