@@ -1,9 +1,12 @@
+import Header from "../Header";
+
 const Statistics = () => {
     return(
     <div className="Statistics">
-        I am Stats
+        <Header title='Statistics' /> 
     </div>
     )
     
 }
+
 export default Statistics;

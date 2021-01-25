@@ -5,7 +5,7 @@ import {FaRegChartBar} from 'react-icons/fa';
 import {FaUserFriends} from 'react-icons/fa';
 import {FaClipboardList} from 'react-icons/fa';
 import {FaTasks} from 'react-icons/fa';
-import {BrowserRouter,NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const Navbar = () => {
     return(
@@ -28,7 +28,7 @@ const LopNavbar = () => {
 
 const MenuItem = (props) => {
     return(
-        <li className = {classes.menuItem} ><NavLink to={props.link}> {props.icon} {props.message}</NavLink></li>    
+        <li className = {classes.menuItem} ><NavLink activeStyle={{ background: '#00acc1' }} to={props.link} className={classes.Navigator}>{props.icon} {props.message}</NavLink></li>    
     )
 }
 
@@ -37,7 +37,7 @@ const Menu = () => {
             <ul className={classes.navbarMenu}>
                 <MenuItem className={classes.SvgIconMenu} link='/dashboard' icon={<FaClipboardList/>} message="Dashboard" />
                 <MenuItem className={classes.SvgIconMenu} link='/profile' icon={<FaUserCog/>} message="Profile" />
-                <MenuItem className={classes.SvgIconMenu} link='/chats' icon={<FaUserFriends/>} message="Chats" />
+                <MenuItem className={classes.SvgIconMenu} link='/chat' icon={<FaUserFriends/>} message="Chats" />
                 <MenuItem className={classes.SvgIconMenu} link='/tasker' icon={<FaTasks/>} message="Tasker" />
                 <MenuItem className={classes.SvgIconMenu} link='/stats' icon={<FaRegChartBar/>} message="statistics" />
                 <MenuItem className={classes.SvgIconMenu} link='/maps' icon={<FaMapMarkerAlt/>} message="Maps" />

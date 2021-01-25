@@ -1,7 +1,9 @@
+import Header from "../Header"
+
 const Tasker = () => {
     return(
     <div className="Tasker">
-        I am Tasker
+        <Header title='task-managment'/>
     </div>
     )
     

@@ -1,7 +1,9 @@
+import Header from "../Header"
+
 const Profile = () => {
     return(
     <div className="Profile">
-        I am profile
+        <Header title='Profile' />
     </div>
     )
     

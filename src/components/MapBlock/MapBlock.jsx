@@ -1,7 +1,9 @@
+import Header from "../Header";
+
 const MapBlock = () => {
     return(
     <div className="Maps">
-        I am Map
+        <Header title = 'Map' />
     </div>
     )
     

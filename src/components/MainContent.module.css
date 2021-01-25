@@ -1,3 +1,66 @@
 .mainWrapper{
     flex-grow: 1;
+    background-color: #f8f9fa;
+}
+
+.HeaderWrapper{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 5px;
+    min-height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.Navigator.active{
+    display: none;
+}
+.HeaderTitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    text-align: left;
+    width: 200px;
+}
+.WidgetItem{
+    padding: 15px 20px;
+    display: flex;
+    align-items: bottom;
+}
+.WidgetItem a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    font-size: 25px;
+    transition: all .2s;
+}
+.WidgetItem a:hover{
+    color: #00acc1;
+}
+.IconButtons{
+    display: flex;
+}
+.leftContent{
+    display: flex;
+    align-items: center;
+}
+.Message{
+    display: block;
+    padding-top: 2px;
+    margin-left: 5px;
+    color: #888;
+}
+.ItemsAccount{
+    display: flex;
+}
+.ItemAccount{
+    margin: 15px;
+}
+.ItemAccount a{
+    text-decoration: none;
+    color: #888;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.ItemAccount a:hover{
+    color: #00acc1;
 }
