@@ -33,16 +33,25 @@ const MenuItem = (props) => {
 }
 
 const Menu = () => {
+
+    let MenuItems = [
+        { link: '/dashboard', icon: <FaClipboardList/>, message: 'Dashboard' },
+        { link: '/profile',   icon: <FaUserCog/>, message: 'Profile' },
+        { link: '/chat',      icon: <FaUserFriends/>, message: 'Chats' },
+        { link: '/tasker',    icon: <FaTasks/>, message: 'Tasker' },
+        { link: '/stats',     icon: <FaRegChartBar/>, message: 'statistics' },
+        { link: '/maps',      icon: <FaMapMarkerAlt/>, message: 'Maps' },
+    ];
+
     return (
-            <ul className={classes.navbarMenu}>
-                <MenuItem className={classes.SvgIconMenu} link='/dashboard' icon={<FaClipboardList/>} message="Dashboard" />
-                <MenuItem className={classes.SvgIconMenu} link='/profile' icon={<FaUserCog/>} message="Profile" />
-                <MenuItem className={classes.SvgIconMenu} link='/chat' icon={<FaUserFriends/>} message="Chats" />
-                <MenuItem className={classes.SvgIconMenu} link='/tasker' icon={<FaTasks/>} message="Tasker" />
-                <MenuItem className={classes.SvgIconMenu} link='/stats' icon={<FaRegChartBar/>} message="statistics" />
-                <MenuItem className={classes.SvgIconMenu} link='/maps' icon={<FaMapMarkerAlt/>} message="Maps" />
-            </ul>
+        <ul className = { classes.navbarMenu } >
+            { MenuItems.map ( ( item ) => {
+                return <MenuItem  className={classes.SvgIconMenu} link={item.link} icon={item.icon} message ={item.message} />
+            } ) }
+        </ul>
     );
 }
 
 export default Navbar;
+
+/*https://openbase.com/js/react-chat-elements*/

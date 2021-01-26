@@ -49,18 +49,56 @@
     margin-left: 5px;
     color: #888;
 }
+
 .ItemsAccount{
     display: flex;
 }
+
 .ItemAccount{
     margin: 15px;
 }
+
 .ItemAccount a{
     text-decoration: none;
     color: #888;
     font-size: 18px;
     text-transform: capitalize;
 }
+
 .ItemAccount a:hover{
     color: #00acc1;
+}
+
+.ContentBlock{
+    padding:15px;
+
+}
+
+.UserLInk{
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    max-width: 200px;
+    padding: 0;
+    box-shadow:  0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+}
+
+.UserLInk li a{
+    display: block;
+    padding: 10px;
+    transition: ease-in-out .1s;
+    text-decoration: none;
+    color: #888;
+    font-size: 18px;
+}
+
+.UserListHead{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #fff;
+    width: 70%;
+    padding: 10px;
+    background: #00acc1;
 }
