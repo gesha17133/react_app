@@ -10,6 +10,10 @@ const Header = (props) => {
                 <ItemsUI />
             </div>
             <ItemsAccount/>
+            <div className={classes.HeaderDecor_1}></div>
+            <div className={classes.HeaderDecor_2}></div>
+            <div className={classes.HeaderDecor_3}></div>
+            <div className={classes.HeaderDecor_4}></div>
         </nav>
     )
 }

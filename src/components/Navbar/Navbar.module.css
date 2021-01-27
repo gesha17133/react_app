@@ -1,12 +1,31 @@
 .navbarWrapper{
-    width: 260px;
+    width: 14%;
     height: 100vh;
     position: relative;
     box-sizing: border-box;
     left: 0;
     top: 0;
     z-index: 1;
-    box-shadow:  0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow:  0 10px 30px -12px rgba(17, 236, 229,0.5);
+    transition: ease all .3s; 
+}
+
+.navbarWrapper.asSwitched{
+    width: 5%;
+    transition:  .3s ease-in;
+}
+.navbarWrapper.asSwitched ul li a span{
+    display: none;
+}
+.navbarWrapper.asSwitched ul li a svg{
+    margin: 0;
+    margin: 0 auto;
+}
+.w {
+    position: absolute;
+    left: 0;
+    z-index: 22;
+    top: 20px;
 }
 
 .navbarWrapper::after {
@@ -19,6 +38,37 @@
     z-index: 3;
     position: absolute;
     background: #000;
+}
+
+.NavbarDecor_3{
+    height: 100px;
+    top: 80px;
+}
+.ToggleSidebar{
+    position: absolute;
+    z-index:5;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color:rgb(17, 236, 229);
+    left: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+.NavbarDecor_1{
+    top: 300px;
+    height: 400px;
+}
+
+.NavbarDecor_1,.NavbarDecor_2,.NavbarDecor_3{
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background: rgb(17, 236, 229);
+    box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+    z-index: 10;
 }
 
 .navbarBackground{
@@ -43,11 +93,14 @@
     justify-content: center;
     border-bottom: 1px solid rgba(255,255,255, 0.5)
 }
-
+.navbarWrapper.asSwitched .navbarTop .logoText{
+    display: none;
+}
 .logoText{  
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
+    transition: all .5s;
 }
 
 .logoImg{
