@@ -6,6 +6,7 @@ import Profile from  './Profile/Profile';
 import MapBlock from  './MapBlock/MapBlock';
 import Tasker from './Tasker/Tasker';
 import Chat from './Chat/Chat';
+
 const Main = () => {
     return(
             <div className={classes.mainWrapper}>

@@ -6,5 +6,6 @@ const MapBlock = () => {
         <Header title = 'Map' />
     </div>
     )
+    
 }
 export default MapBlock;

@@ -1,7 +1,7 @@
 .navbarWrapper{
     width: 14%;
     height: 100vh;
-    position: relative;
+    position: fixed;
     box-sizing: border-box;
     left: 0;
     top: 0;
