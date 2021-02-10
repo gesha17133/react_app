@@ -1,0 +1,107 @@
+.ItemSingle{
+    color: #fff;
+    background: #2ebaee;
+    max-width:500px;
+    text-align: left;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #2ebaee;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: ease-in-out .4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.TaskBoard{
+    display: flex;
+}
+.TaskGenerator{
+    display: flex;
+}
+.ListTasks{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 50%;
+    text-align: left;
+}
+.ToDoGlist .GlistWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ItemSingle:hover{
+    background: transparent;
+}
+.ToDoGlist{
+    max-width: 400px;
+}
+
+.ToDoGlist input{
+    margin: 10px 0;
+    border: 1px solid #2ebaee;
+    color: #2ebaee;
+    outline: none;
+    height: 25px;
+    font-size: 18px;
+    background: transparent;
+}
+
+.ToDoGlist button{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: #2ebaee;
+    text-align: center;
+    line-height: 80px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.ButtonToAdd{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background: #2ebaee;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    border-radius: 80px;
+    border: 1px solid #2ebaee;
+    outline: none;
+    cursor: pointer;
+    line-height: 40px;
+    transition: ease-in-out .5s;
+}
+.ButtonToAdd:hover{
+    background: transparent;
+    color: #2ebaee;
+}
+
+.TaskGenerator input{
+    width: 515px;
+    border: 1px solid #2ebaee;
+    height: 38px;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
+    color: #fff;
+}
+.buttonInside{
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.buttonInside:hover{
+    color: #2ebaee;
+}

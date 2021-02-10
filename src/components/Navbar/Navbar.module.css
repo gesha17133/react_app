@@ -5,7 +5,7 @@
     box-sizing: border-box;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 100;
     box-shadow:  0 10px 30px -12px rgba(17, 236, 229,0.5);
     transition: ease all .3s; 
 }
@@ -24,7 +24,7 @@
 .w {
     position: absolute;
     left: 0;
-    z-index: 22;
+    z-index: 100;
     top: 20px;
 }
 
@@ -46,7 +46,7 @@
 }
 .ToggleSidebar{
     position: absolute;
-    z-index:5;
+    z-index:101;
     top: 0;
     padding: 10px;
     cursor: pointer;
@@ -60,6 +60,11 @@
 .NavbarDecor_1{
     top: 300px;
     height: 400px;
+    animation: animate infinite ease-in-out 8s;
+}
+
+.NavbarDecor_3{
+    animation: animate2 infinite ease-in-out 8s;
 }
 
 .NavbarDecor_1,.NavbarDecor_2,.NavbarDecor_3{
@@ -68,7 +73,7 @@
     width: 1px;
     background: rgb(17, 236, 229);
     box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-    z-index: 10;
+    z-index: 100;
 }
 
 .navbarBackground{
@@ -142,4 +147,46 @@
     margin-right: 15px;
 }
 
+@keyframes animate{
+    from{
+        top: 0;
+    }
+    
+    25%{
+        bottom: 100%; 
+    }
+    
+    50%{
+        bottom: 0;
+    }
+    
+    75%{
+       top: 50%;
+    }
 
+    100%{
+        top: 0;
+    }   
+}
+
+@keyframes animate2{
+    
+    25%{
+        top: 50%;
+    }
+    
+    50%{
+        top: 0;
+    }
+    
+    75%{
+        bottom: 100%; 
+    }
+    
+    100%{
+        top: 0;
+    }   
+    from{
+        bottom: 0;
+    }
+}

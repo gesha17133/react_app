@@ -1,6 +1,7 @@
 import classes from './posts.module.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Dick } from './opost';
 
 const Posts = () =>  {
 
@@ -18,19 +19,17 @@ const Posts = () =>  {
       console.log(count);
       fetchData();
     }, [count]);
-   
+    
     return (
       <div className={classes.rest_main_wrapper}>
         {data.data.map(item => (
-          <div key={item.id}>
-            <img src={item.avatar} alt=""/>
-            <p>{item.first_name} {item.last_name}</p>
-            
+          <div key={item.id}> 
+            <Dick link={item.avatar} email={item.email} fullname = {`${item.first_name} ${item.last_name}`} />  
           </div>
         ))}
 
-        <button onClick={ () => limit != count ? setState(count + 1) : count }>Forvard</button>
-        <button onClick={ () => count >= 1 ? setState(count - 1 ) : count  }> Back </button>
+        <button onClick={ () => count > 1 ? setState( count - 1 ) : count  }> Back </button>
+        <button onClick={ () => limit !== count ? setState( count + 1 ) : count } >Forvard</button>
       </div>
     );
 }

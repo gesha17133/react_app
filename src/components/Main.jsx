@@ -7,18 +7,22 @@ import MapBlock from  './MapBlock/MapBlock';
 import Tasker from './Tasker/Tasker';
 import Chat from './Chat/Chat';
 
-const Main = () => {
+const Main = ( props ) => {    
+
+    let users = ['Dimych','Anton', 'Vladlen', 'Lenin', 'Dasha', 'Vitalik', 'Kolia', 'Alexandr', 'Batya', 'Natasha', ' Billy', ' Darkholm', 'Jebroni', 'Master'];
+    
     return(
-            <div className={classes.mainWrapper}>
-                <Switch>
-                    <Route path='/dashboard' component={Dashboard} />
-                    <Route path='/profile' component={Profile} />
-                    <Route path='/tasker' component={Tasker} />
-                    <Route path='/chat' component={Chat} />
-                    <Route path='/stats' component={Statistics} />
-                    <Route path='/maps' component={MapBlock} />
-                </Switch>
-            </div>
+        <div className={classes.mainWrapper}>
+            <Switch>
+                <Route path='/dashboard' render = {Dashboard} />
+                <Route path='/profile' render = {Profile} />
+                <Route path='/tasker' render = { () => < Tasker tasks={props.appState.tasks} /> } />
+                <Route path='/chat' render={ () => <Chat users={users} />} />
+                <Route path='/stats' render = { Statistics} />
+                <Route path='/maps' render = {MapBlock} />
+            </Switch>
+        </div>
     )
 }
+
 export default Main;

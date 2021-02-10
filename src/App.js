@@ -3,12 +3,14 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main';
 import {BrowserRouter} from 'react-router-dom';
-function App() {
+
+function App(props) {
+
   return (
     <div className="App">
     <BrowserRouter> 
         <Navbar/>
-        <Main />
+        <Main users={props.appState.users} appState={props.appState}/>
     </BrowserRouter>
     </div>
   );
